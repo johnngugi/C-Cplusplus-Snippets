@@ -40,8 +40,8 @@ int main()
 	for (vector<int>::iterator itr = itr1; itr!=itr2; ++itr)
 		cout << *itr << endl;
 
-	for (it : v) // C++ 11
-		cout << it << " ";
+	for (auto const& value: v) // C++ 11
+		cout << value << " ";
 
 	// Vector is a dynamically allocated contiguos array in memory
 	int *p = &v[0];
@@ -50,7 +50,7 @@ int main()
 	// v: {4, 10, 8}
 	if (v.empty()) {cout << "Not possible.\n";}
 
-	cout << v.size(); // 3
+	cout << v.size() << endl; // 3
 
 	vector<int> v2(v); // Copy constructor, v2: {4, 10, 8}
 
