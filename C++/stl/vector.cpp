@@ -65,6 +65,4 @@ int main()
 	 * 2. slow insert/remove at the beginning or in the middle: o(n)
 	 * 3. slow search: o(n)
 	 */
-
-	// myList1.splice(itr, myList2, itr_1, itr_2);
 }
