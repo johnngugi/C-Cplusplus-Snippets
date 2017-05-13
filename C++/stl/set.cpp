@@ -32,4 +32,15 @@ int main()
 
 	myset.erase(it); // myset: {1, 7, 9}
 	myset.erase(7); // myset: {1, 9}
+
+	// multiset is a set that allows multiple items
+	multiset<int> myset;
+
+	// set/multiset: value of elements cannot be modified	
+
+	/* Properties:
+	 * 1. Fast search: O(log(n))
+	 * 2. Traversing is slow compared to vector and deque
+	 * 3. No random access, no [] operator
+	 */
 }
