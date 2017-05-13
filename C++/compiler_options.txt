@@ -1,0 +1,17 @@
+- g++ example.cpp: GNU c++ compiler, will create the executable a.out by default
+
+- g++ example.cpp -o onefile: The -o will specify the name of the executable file
+
+- g++ -c example.cpp -o onefile.o: The -c will compile file into an object file
+                                The -o will specify the name of the object file
+
+- g++ onefile.o -o onefile: g++ with object file will link only, we don't have
+to compile again
+
+- g++ -c things.cpp
+- g++ -c apples.cpp              -- This is independent compilation
+- g++ -c mangoes.cpp
+
+- g++ mangoes.cpp things.cpp apples.cpp -o fruits : Compile and link all together and output to the executable "fruits". No object file will be saved.
+
+- g++: things.o apples.o mangoes.o -o fruits: Link only
