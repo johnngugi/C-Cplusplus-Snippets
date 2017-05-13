@@ -1,0 +1,25 @@
+# Simple example of macros in a makefile
+# run with make -f macros
+
+OBJS = arithmetic.o add.o subtract.o
+CC = g++
+CFLAGS = -Wall -c
+LFLAGS = -Wall
+
+all: $(OBJS)
+		$(CC) $(LFLAGS) $(OBJS) -o run
+
+arithmetic: arithmetic.cpp add.h subtract.h
+	$(CC) $(CFLAGS) artimetic.cpp
+
+add.o: add.cpp add.h
+	$(CC) $(CFLAGS) add.cpp
+
+subtract.o: subtract.cpp subtract.h
+	$(CC) $(CFLAGS) subtract.cpp
+
+clean:
+	\rm *.o run
+
+tar:
+	tar cfv arithmetic.tar macros *.cpp *.h

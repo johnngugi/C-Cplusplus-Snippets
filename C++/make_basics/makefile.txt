@@ -1,0 +1,10 @@
+- When we creat a makefile, we create a series of targets that we want the compile to make
+
+- The first word on the first line is our target and it comes before the colon and anything after the colon is the dependencies needed to create the target
+
+- The second line is the command that gets invoked to create the target
+
+- If you have a specific makefile to run: 
+	makefile -f mymake
+
+- If you have a specific target: make things.o
